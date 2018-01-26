@@ -27,12 +27,27 @@ footer {
       &:last-child {
         margin-bottom: 0;
       }
+
+      @media screen and (max-width: 850px){
+        font-size: 13px;
+        line-height: 22px;
+      }
+    }
+
+    @media screen and (max-width: 1260px){
+      width: calc(100% - 150px);
+    }
+
+    @media screen and (max-width: 850px){
+      width: calc(100% - 120px);
+      margin-bottom: 60px;
     }
   }
 
   .kontakty {
     width: calc(100% - 200px);
     margin: 0 auto;
+    vertical-align: top;
 
     .kontakt {
       display: inline-block;
@@ -84,6 +99,32 @@ footer {
       &:last-child {
         margin-right: 0;
       }
+
+      @media screen and (max-width: 850px){
+        margin-right: 65px;
+      }
     }
+
+    @media screen and (max-width: 1260px){
+      width: calc(100% - 150px);
+    }
+
+    @media screen and (max-width: 850px){
+      width: calc(100% - 120px);
+    }
+  }
+
+  @media screen and (max-width: 1260px){
+    width: calc((100% - 100px) - 100px);
+  }
+
+  @media screen and (max-width: 1000px){
+    width: calc(100% - 100px);
+  }
+
+  @media screen and (max-width: 850px){
+    margin-top: 80px;
+    padding-top: 50px;
+    margin-bottom: 50px;
   }
 }

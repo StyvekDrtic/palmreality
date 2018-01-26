@@ -2630,14 +2630,36 @@ header {
           font-size: 12px;
           color: #000000;
           letter-spacing: 1.85px; }
+          @media screen and (max-width: 850px) {
+            header nav ul li a {
+              letter-spacing: 1.25px; } }
         header nav ul li:last-child {
           margin-right: 0; }
+        @media screen and (max-width: 1060px) {
+          header nav ul li {
+            margin-right: 20px; } }
+      @media screen and (max-width: 1060px) {
+        header nav ul {
+          margin-left: 50px; } }
+    @media screen and (max-width: 780px) {
+      header nav {
+        display: none; } }
   header .logo img {
     height: 26px;
     width: 131px;
     position: absolute;
     left: calc((100% - 131px)/2);
     top: 28px; }
+    @media screen and (max-width: 780px) {
+      header .logo img {
+        width: auto;
+        height: 20px;
+        top: 25px;
+        left: 50px; } }
+    @media screen and (max-width: 590px) {
+      header .logo img {
+        left: 25px;
+        top: 20px; } }
   header .telefoniCislo {
     position: absolute;
     top: 20px;
@@ -2656,6 +2678,38 @@ header {
       line-height: 10px;
       position: relative;
       top: -1px; }
+    @media screen and (max-width: 1060px) {
+      header .telefoniCislo {
+        right: 50px; } }
+    @media screen and (max-width: 780px) {
+      header .telefoniCislo {
+        display: none; } }
+  @media screen and (max-width: 780px) {
+    header {
+      height: 70px;
+      margin-top: 0; } }
+  @media screen and (max-width: 590px) {
+    header {
+      height: 60px; } }
+
+.menuButton {
+  display: none;
+  background: none;
+  border: 0;
+  font-family: reg;
+  letter-spacing: 1.85px;
+  font-size: 12px;
+  position: absolute;
+  top: 28px;
+  right: 50px;
+  padding: 0; }
+  @media screen and (max-width: 780px) {
+    .menuButton {
+      display: block; } }
+  @media screen and (max-width: 590px) {
+    .menuButton {
+      right: 25px;
+      top: 23px; } }
 
 footer {
   background: #1A1A1A;
@@ -2680,9 +2734,21 @@ footer {
         text-decoration: none; }
       footer .texty h5:last-child {
         margin-bottom: 0; }
+      @media screen and (max-width: 850px) {
+        footer .texty h5 {
+          font-size: 13px;
+          line-height: 22px; } }
+    @media screen and (max-width: 1260px) {
+      footer .texty {
+        width: calc(100% - 150px); } }
+    @media screen and (max-width: 850px) {
+      footer .texty {
+        width: calc(100% - 120px);
+        margin-bottom: 60px; } }
   footer .kontakty {
     width: calc(100% - 200px);
-    margin: 0 auto; }
+    margin: 0 auto;
+    vertical-align: top; }
     footer .kontakty .kontakt {
       display: inline-block;
       margin-right: 80px;
@@ -2717,6 +2783,26 @@ footer {
             margin-bottom: 0; }
       footer .kontakty .kontakt:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 850px) {
+        footer .kontakty .kontakt {
+          margin-right: 65px; } }
+    @media screen and (max-width: 1260px) {
+      footer .kontakty {
+        width: calc(100% - 150px); } }
+    @media screen and (max-width: 850px) {
+      footer .kontakty {
+        width: calc(100% - 120px); } }
+  @media screen and (max-width: 1260px) {
+    footer {
+      width: calc((100% - 100px) - 100px); } }
+  @media screen and (max-width: 1000px) {
+    footer {
+      width: calc(100% - 100px); } }
+  @media screen and (max-width: 850px) {
+    footer {
+      margin-top: 80px;
+      padding-top: 50px;
+      margin-bottom: 50px; } }
 
 .jumbotron {
   position: relative; }
@@ -2729,22 +2815,38 @@ footer {
     margin-top: 25px;
     height: 720px; }
     .jumbotron .podJumbotron h1 {
-      margin: 0;
       font-family: med;
       color: #000;
       font-size: 33px;
       text-align: center;
       padding-top: 220px;
-      padding-bottom: 25px; }
+      padding-bottom: 25px;
+      max-width: calc(100% - 60px);
+      margin: 0 auto; }
       .jumbotron .podJumbotron h1 .skrt {
         text-decoration: line-through;
         font-family: med; }
+      @media screen and (max-width: 850px) {
+        .jumbotron .podJumbotron h1 {
+          font-size: 20px;
+          padding-top: 90px;
+          padding-bottom: 15px;
+          line-height: 27px; } }
     .jumbotron .podJumbotron a {
       text-decoration: none;
       color: #B8B8B8;
       font-size: 12px;
       text-align: center;
       display: block; }
+    @media screen and (max-width: 850px) {
+      .jumbotron .podJumbotron {
+        height: 320px; } }
+    @media screen and (max-width: 780px) {
+      .jumbotron .podJumbotron {
+        margin-top: 0; } }
+    @media screen and (max-width: 590px) {
+      .jumbotron .podJumbotron {
+        width: calc(100% - 50px); } }
   .jumbotron .tablet {
     width: calc((100% - 100px) - 200px);
     max-width: 1240px;
@@ -2763,6 +2865,18 @@ footer {
       width: calc(100% - 64px);
       max-width: 650px;
       line-height: 30px; }
+      @media screen and (max-width: 850px) {
+        .jumbotron .tablet h2 {
+          font-size: 12px;
+          line-height: 21px; } }
+    @media screen and (max-width: 1260px) {
+      .jumbotron .tablet {
+        width: calc((100% - 100px) - 100px); } }
+    @media screen and (max-width: 850px) {
+      .jumbotron .tablet {
+        padding: 45px 0;
+        top: -95px;
+        margin-bottom: -95px; } }
 
 .sluzby {
   width: calc((100% - 100px) - 200px);
@@ -2789,6 +2903,13 @@ footer {
           margin-right: 20px;
           position: relative;
           top: 25px; }
+          @media screen and (max-width: 1260px) {
+            .sluzby .sluzba .blok .napis .carka {
+              width: 50px; } }
+          @media screen and (max-width: 850px) {
+            .sluzby .sluzba .blok .napis .carka {
+              width: 75px;
+              top: 12px; } }
         .sluzby .sluzba .blok .napis h3 {
           font-family: ita;
           font-size: 17px;
@@ -2797,17 +2918,56 @@ footer {
           display: inline-block;
           vertical-align: middle;
           text-transform: uppercase; }
+          @media screen and (max-width: 850px) {
+            .sluzby .sluzba .blok .napis h3 {
+              font-size: 14px;
+              line-height: 1.91px; } }
       .sluzby .sluzba .blok p {
         font-size: 13px;
         color: #000000;
         line-height: 27px;
         float: left; }
+        @media screen and (max-width: 850px) {
+          .sluzby .sluzba .blok p {
+            max-width: 480px;
+            width: 100%;
+            font-size: 12px;
+            line-height: 25px;
+            margin: 0;
+            margin-top: 25px; } }
+      @media screen and (max-width: 1260px) {
+        .sluzby .sluzba .blok {
+          width: calc(70% - 50px); } }
+      @media screen and (max-width: 850px) {
+        .sluzby .sluzba .blok {
+          width: 100%;
+          -webkit-box-ordinal-group: 1;
+          -moz-box-ordinal-group: 1;
+          -ms-flex-order: 1;
+          -webkit-order: 1;
+          order: 1; } }
     .sluzby .sluzba .fotka {
       height: 160px;
       width: 380px;
       display: inline-block;
       vertical-align: middle;
       margin-left: calc(((100% - 100px)/2 - 380px - 100px)/2 + 100px); }
+      @media screen and (max-width: 1260px) {
+        .sluzby .sluzba .fotka {
+          width: 230px;
+          margin-left: calc(((100% - (70% - 50px)) - 230px)/2); } }
+      @media screen and (max-width: 850px) {
+        .sluzby .sluzba .fotka {
+          -webkit-box-ordinal-group: 2;
+          -moz-box-ordinal-group: 2;
+          -ms-flex-order: 2;
+          -webkit-order: 2;
+          order: 2;
+          width: 380px;
+          height: 160px;
+          margin-left: 0;
+          margin-right: 0;
+          margin-top: 40px; } }
     .sluzby .sluzba:nth-child(1) {
       margin-top: 140px; }
       .sluzby .sluzba:nth-child(1) .fotka {
@@ -2815,6 +2975,9 @@ footer {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; }
+      @media screen and (max-width: 850px) {
+        .sluzby .sluzba:nth-child(1) {
+          margin-top: 80px; } }
     .sluzby .sluzba:nth-child(2) .napis {
       float: right; }
     .sluzby .sluzba:nth-child(2) .fotka {
@@ -2823,6 +2986,13 @@ footer {
       background-position: center;
       background-repeat: no-repeat;
       margin-right: calc(((100% - 100px)/2 - 380px - 100px)/2 + 95px); }
+      @media screen and (max-width: 1260px) {
+        .sluzby .sluzba:nth-child(2) .fotka {
+          margin-right: calc(((100% - (70% - 50px)) - 230px)/2 - 5px); } }
+      @media screen and (max-width: 850px) {
+        .sluzby .sluzba:nth-child(2) .fotka {
+          margin-right: 0;
+          margin-left: calc(100% - 380px); } }
     .sluzby .sluzba:nth-child(2) .carka {
       order: 2;
       margin-right: 0 !important;
@@ -2831,6 +3001,9 @@ footer {
       order: 1; }
     .sluzby .sluzba:nth-child(2) p {
       text-align: right; }
+      @media screen and (max-width: 850px) {
+        .sluzby .sluzba:nth-child(2) p {
+          float: right; } }
     .sluzby .sluzba:nth-child(3) .fotka {
       background: url("../img/organizace.jpg");
       background-size: cover;
@@ -2844,6 +3017,13 @@ footer {
       background-position: center;
       background-repeat: no-repeat;
       margin-right: calc(((100% - 100px)/2 - 380px - 100px)/2 + 95px); }
+      @media screen and (max-width: 1260px) {
+        .sluzby .sluzba:nth-child(4) .fotka {
+          margin-right: calc(((100% - (70% - 50px)) - 230px)/2 - 5px); } }
+      @media screen and (max-width: 850px) {
+        .sluzby .sluzba:nth-child(4) .fotka {
+          margin-right: 0;
+          margin-left: calc(100% - 380px); } }
     .sluzby .sluzba:nth-child(4) .carka {
       order: 2;
       margin-right: 0 !important;
@@ -2852,3 +3032,30 @@ footer {
       order: 1; }
     .sluzby .sluzba:nth-child(4) p {
       text-align: right; }
+      @media screen and (max-width: 850px) {
+        .sluzby .sluzba:nth-child(4) p {
+          float: right; } }
+    @media screen and (max-width: 850px) {
+      .sluzby .sluzba {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        /* optional */
+        -webkit-box-align: start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        align-items: flex-start; } }
+    @media screen and (max-width: 850px) {
+      .sluzby .sluzba {
+        margin-top: 80px; } }
+  @media screen and (max-width: 1260px) {
+    .sluzby {
+      width: calc((100% - 100px) - 100px); } }
