@@ -1,0 +1,194 @@
+.jumbotron {
+  position: relative;
+
+  .podJumbotron {
+    background: #F5F5F5;
+    max-width: 1440px;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    display: block;
+    margin-top: 25px;
+    height: 720px;
+
+    h1 {
+      margin: 0;
+      font-family: med;
+      color: #000;
+      font-size: 33px;
+      text-align: center;
+      padding-top: 220px;
+      padding-bottom: 25px;
+
+      .skrt {
+        text-decoration: line-through;
+        font-family: med;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #B8B8B8;
+      font-size: 12px;
+      text-align: center;
+      display: block;
+    }
+  }
+
+  .tablet {
+    width: calc((100% - 100px) - 200px);
+    max-width: 1240px;
+    margin: 0 auto;
+    background: #1A1A1A;
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+    top: -190px;
+    margin-bottom: -190px;
+
+    h2 {
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      margin: 0 auto;
+      width: calc(100% - 64px);
+      max-width: 650px;
+      line-height: 30px;
+    }
+  }
+}
+
+.sluzby {
+  width: calc((100% - 100px) - 200px);
+  max-width: 1240px;
+  margin: 0 auto;
+
+  .sluzba {
+    margin-top: 130px;
+
+    .blok {
+      display: inline-block;
+      vertical-align: middle;
+      width: calc((100% - 100px)/2);
+
+      .napis {
+        display: flex;
+        flex-flow: row;
+
+        .carka {
+          background: url("../img/carka.png");
+          background-size: 100% 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 2px;
+          width: 100px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 20px;
+          position: relative;
+          top: 25px;
+        }
+
+        h3 {
+          font-family: ita;
+          font-size: 17px;
+          color: #000000;
+          letter-spacing: 2.32px;
+          display: inline-block;
+          vertical-align: middle;
+          text-transform: uppercase;
+        }
+      }
+
+      p {
+        font-size: 13px;
+        color: #000000;
+        line-height: 27px;
+        float: left;
+      }
+    }
+
+    .fotka {
+      height: 160px;
+      width: 380px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: calc(((100% - 100px)/2 - 380px - 100px)/2 + 100px);
+    }
+
+    &:nth-child(1) {
+      margin-top: 140px;
+
+      .fotka {
+        background: url("../img/foto.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:nth-child(2) {
+      .napis {
+        float: right;
+      }
+
+      .fotka {
+        background: url("../img/marketing.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: calc(((100% - 100px)/2 - 380px - 100px)/2 + 95px);
+      }
+
+      .carka {
+        order: 2;
+        margin-right: 0 !important;
+        margin-left: 20px;
+      }
+
+      h3 {
+        order: 1;
+      }
+
+      p {
+        text-align: right;
+      }
+    }
+
+    &:nth-child(3) {
+      .fotka {
+        background: url("../img/organizace.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:nth-child(4) {
+      .napis {
+        float: right;
+      }
+
+      .fotka {
+        background: url("../img/spoluprace.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: calc(((100% - 100px)/2 - 380px - 100px)/2 + 95px);
+      }
+
+      .carka {
+        order: 2;
+        margin-right: 0 !important;
+        margin-left: 20px;
+      }
+
+      h3 {
+        order: 1;
+      }
+
+      p {
+        text-align: right;
+      }
+    }
+  }
+}

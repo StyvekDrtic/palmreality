@@ -2591,5 +2591,264 @@ colors
 defaults
 
 *****************************************/
-h1, h2, h3, h4, h5, p, span, a {
-  font-weight: normal !important; }
+.bold {
+  font-family: bol; }
+
+body {
+  background: #fff;
+  outline: none; }
+
+h1, h2, h3, h4, h5, p, span, a, div, header, footer {
+  font-weight: normal !important;
+  font-family: reg;
+  outline: 0; }
+  h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, p:focus, span:focus, a:focus, div:focus, header:focus, footer:focus {
+    outline: 0; }
+
+header {
+  width: 100%;
+  height: 80px;
+  margin-top: 25px;
+  background: #fff;
+  position: relative; }
+  header nav {
+    display: inline-block;
+    text-transform: uppercase; }
+    header nav ul {
+      display: inline-block;
+      padding: 0;
+      margin-top: 31px;
+      margin-bottom: 31px;
+      margin-left: 100px; }
+      header nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        margin-right: 42px; }
+        header nav ul li a {
+          text-decoration: none;
+          font-size: 12px;
+          color: #000000;
+          letter-spacing: 1.85px; }
+        header nav ul li:last-child {
+          margin-right: 0; }
+  header .logo img {
+    height: 26px;
+    width: 131px;
+    position: absolute;
+    left: calc((100% - 131px)/2);
+    top: 28px; }
+  header .telefoniCislo {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    color: #fff;
+    text-decoration: none;
+    background: #000;
+    padding: 11px 24px; }
+    header .telefoniCislo .fa {
+      position: relative;
+      top: 0px;
+      margin-right: 6px; }
+    header .telefoniCislo span {
+      font-family: bol;
+      font-size: 13px;
+      line-height: 10px;
+      position: relative;
+      top: -1px; }
+
+footer {
+  background: #1A1A1A;
+  width: calc((100% - 100px) - 200px);
+  max-width: 1240px;
+  margin: 0 auto;
+  color: #fff;
+  padding-top: 60px;
+  margin-top: 140px;
+  margin-bottom: 175px; }
+  footer .texty {
+    width: calc(100% - 200px);
+    margin: 0 auto;
+    margin-bottom: 85px; }
+    footer .texty h5 {
+      font-size: 16px;
+      margin: 0;
+      margin-bottom: 30px;
+      line-height: 30px; }
+      footer .texty h5 a {
+        color: #fff;
+        text-decoration: none; }
+      footer .texty h5:last-child {
+        margin-bottom: 0; }
+  footer .kontakty {
+    width: calc(100% - 200px);
+    margin: 0 auto; }
+    footer .kontakty .kontakt {
+      display: inline-block;
+      margin-right: 80px;
+      margin-bottom: 60px; }
+      footer .kontakty .kontakt .jmenoFunkce {
+        margin-bottom: 20px; }
+        footer .kontakty .kontakt .jmenoFunkce h3 {
+          font-family: bol;
+          margin: 0;
+          font-size: 15px;
+          letter-spacing: 4px;
+          display: inline-block;
+          margin-right: 10px; }
+        footer .kontakty .kontakt .jmenoFunkce h4 {
+          font-family: ita;
+          margin: 0;
+          font-size: 12px;
+          color: #626262;
+          display: inline-block; }
+      footer .kontakty .kontakt ul {
+        padding: 0;
+        margin: 0; }
+        footer .kontakty .kontakt ul li {
+          margin: 0;
+          display: block;
+          margin-bottom: 10px; }
+          footer .kontakty .kontakt ul li a {
+            font-size: 13px;
+            text-decoration: none;
+            color: #fff; }
+          footer .kontakty .kontakt ul li:last-child {
+            margin-bottom: 0; }
+      footer .kontakty .kontakt:last-child {
+        margin-right: 0; }
+
+.jumbotron {
+  position: relative; }
+  .jumbotron .podJumbotron {
+    background: #F5F5F5;
+    max-width: 1440px;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    display: block;
+    margin-top: 25px;
+    height: 720px; }
+    .jumbotron .podJumbotron h1 {
+      margin: 0;
+      font-family: med;
+      color: #000;
+      font-size: 33px;
+      text-align: center;
+      padding-top: 220px;
+      padding-bottom: 25px; }
+      .jumbotron .podJumbotron h1 .skrt {
+        text-decoration: line-through;
+        font-family: med; }
+    .jumbotron .podJumbotron a {
+      text-decoration: none;
+      color: #B8B8B8;
+      font-size: 12px;
+      text-align: center;
+      display: block; }
+  .jumbotron .tablet {
+    width: calc((100% - 100px) - 200px);
+    max-width: 1240px;
+    margin: 0 auto;
+    background: #1A1A1A;
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+    top: -190px;
+    margin-bottom: -190px; }
+    .jumbotron .tablet h2 {
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      margin: 0 auto;
+      width: calc(100% - 64px);
+      max-width: 650px;
+      line-height: 30px; }
+
+.sluzby {
+  width: calc((100% - 100px) - 200px);
+  max-width: 1240px;
+  margin: 0 auto; }
+  .sluzby .sluzba {
+    margin-top: 130px; }
+    .sluzby .sluzba .blok {
+      display: inline-block;
+      vertical-align: middle;
+      width: calc((100% - 100px)/2); }
+      .sluzby .sluzba .blok .napis {
+        display: flex;
+        flex-flow: row; }
+        .sluzby .sluzba .blok .napis .carka {
+          background: url("../img/carka.png");
+          background-size: 100% 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 2px;
+          width: 100px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 20px;
+          position: relative;
+          top: 25px; }
+        .sluzby .sluzba .blok .napis h3 {
+          font-family: ita;
+          font-size: 17px;
+          color: #000000;
+          letter-spacing: 2.32px;
+          display: inline-block;
+          vertical-align: middle;
+          text-transform: uppercase; }
+      .sluzby .sluzba .blok p {
+        font-size: 13px;
+        color: #000000;
+        line-height: 27px;
+        float: left; }
+    .sluzby .sluzba .fotka {
+      height: 160px;
+      width: 380px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: calc(((100% - 100px)/2 - 380px - 100px)/2 + 100px); }
+    .sluzby .sluzba:nth-child(1) {
+      margin-top: 140px; }
+      .sluzby .sluzba:nth-child(1) .fotka {
+        background: url("../img/foto.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+    .sluzby .sluzba:nth-child(2) .napis {
+      float: right; }
+    .sluzby .sluzba:nth-child(2) .fotka {
+      background: url("../img/marketing.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: calc(((100% - 100px)/2 - 380px - 100px)/2 + 95px); }
+    .sluzby .sluzba:nth-child(2) .carka {
+      order: 2;
+      margin-right: 0 !important;
+      margin-left: 20px; }
+    .sluzby .sluzba:nth-child(2) h3 {
+      order: 1; }
+    .sluzby .sluzba:nth-child(2) p {
+      text-align: right; }
+    .sluzby .sluzba:nth-child(3) .fotka {
+      background: url("../img/organizace.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .sluzby .sluzba:nth-child(4) .napis {
+      float: right; }
+    .sluzby .sluzba:nth-child(4) .fotka {
+      background: url("../img/spoluprace.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: calc(((100% - 100px)/2 - 380px - 100px)/2 + 95px); }
+    .sluzby .sluzba:nth-child(4) .carka {
+      order: 2;
+      margin-right: 0 !important;
+      margin-left: 20px; }
+    .sluzby .sluzba:nth-child(4) h3 {
+      order: 1; }
+    .sluzby .sluzba:nth-child(4) p {
+      text-align: right; }

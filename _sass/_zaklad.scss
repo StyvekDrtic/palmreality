@@ -36,7 +36,21 @@ defaults
 
 *****************************************/
 
-h1, h2, h3, h4, h5, p, span, a {
+.bold {
+  font-family: bol;
+}
+
+body {
+  background: #fff;
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, p, span, a, div, header, footer {
   font-weight: normal !important;
-  //font-family: book;
+  font-family: reg;
+  outline: 0;
+
+  &:focus {
+    outline: 0;
+  }
 }
