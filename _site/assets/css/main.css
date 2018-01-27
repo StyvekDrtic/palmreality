@@ -2793,6 +2793,9 @@ footer {
       @media screen and (max-width: 590px) {
         footer .kontakty .kontakt {
           margin-bottom: 35px; } }
+      @media screen and (max-width: 480px) {
+        footer .kontakty .kontakt {
+          margin-right: 0; } }
     @media screen and (max-width: 1260px) {
       footer .kontakty {
         width: calc(100% - 150px); } }
@@ -2898,7 +2901,8 @@ footer {
     @media screen and (max-width: 590px) {
       .jumbotron .tablet {
         width: calc(100% - 100px);
-        padding: 30px 0; } }
+        padding: 30px 0;
+        margin-bottom: -110px; } }
 
 .sluzby {
   width: calc((100% - 100px) - 200px);
@@ -2931,7 +2935,13 @@ footer {
           @media screen and (max-width: 850px) {
             .sluzby .sluzba .blok .napis .carka {
               width: 75px;
-              top: 12px; } }
+              top: 20px; } }
+          @media screen and (max-width: 420px) {
+            .sluzby .sluzba .blok .napis .carka {
+              display: block;
+              position: static;
+              margin: 0;
+              margin-bottom: 15px; } }
         .sluzby .sluzba .blok .napis h3 {
           font-family: ita;
           font-size: 17px;
@@ -2943,7 +2953,14 @@ footer {
           @media screen and (max-width: 850px) {
             .sluzby .sluzba .blok .napis h3 {
               font-size: 14px;
-              line-height: 1.91px; } }
+              letter-spacing: 1.91px; } }
+          @media screen and (max-width: 420px) {
+            .sluzby .sluzba .blok .napis h3 {
+              display: block; } }
+        @media screen and (max-width: 420px) {
+          .sluzby .sluzba .blok .napis {
+            display: block;
+            flex-flow: nowrap; } }
       .sluzby .sluzba .blok p {
         font-size: 13px;
         color: #000000;
@@ -2960,6 +2977,9 @@ footer {
         @media screen and (max-width: 590px) {
           .sluzby .sluzba .blok p {
             max-width: none; } }
+        @media screen and (max-width: 420px) {
+          .sluzby .sluzba .blok p {
+            line-height: 24px; } }
       @media screen and (max-width: 1260px) {
         .sluzby .sluzba .blok {
           width: calc(70% - 50px); } }
@@ -3012,6 +3032,9 @@ footer {
           margin-top: 80px; } }
     .sluzby .sluzba:nth-child(2) .napis {
       float: right; }
+      @media screen and (max-width: 420px) {
+        .sluzby .sluzba:nth-child(2) .napis {
+          float: none; } }
     .sluzby .sluzba:nth-child(2) .fotka {
       background: url("../img/marketing.jpg");
       background-size: cover;
@@ -3029,6 +3052,10 @@ footer {
       order: 2;
       margin-right: 0 !important;
       margin-left: 20px; }
+      @media screen and (max-width: 420px) {
+        .sluzby .sluzba:nth-child(2) .carka {
+          margin: 0;
+          margin-bottom: 15px; } }
     .sluzby .sluzba:nth-child(2) h3 {
       order: 1; }
     .sluzby .sluzba:nth-child(2) p {
@@ -3036,6 +3063,10 @@ footer {
       @media screen and (max-width: 850px) {
         .sluzby .sluzba:nth-child(2) p {
           float: right; } }
+      @media screen and (max-width: 420px) {
+        .sluzby .sluzba:nth-child(2) p {
+          float: none;
+          text-align: left; } }
     .sluzby .sluzba:nth-child(3) .fotka {
       background: url("../img/organizace.jpg");
       background-size: cover;
@@ -3043,6 +3074,9 @@ footer {
       background-repeat: no-repeat; }
     .sluzby .sluzba:nth-child(4) .napis {
       float: right; }
+      @media screen and (max-width: 420px) {
+        .sluzby .sluzba:nth-child(4) .napis {
+          float: none; } }
     .sluzby .sluzba:nth-child(4) .fotka {
       background: url("../img/spoluprace.jpg");
       background-size: cover;
@@ -3060,6 +3094,10 @@ footer {
       order: 2;
       margin-right: 0 !important;
       margin-left: 20px; }
+      @media screen and (max-width: 420px) {
+        .sluzby .sluzba:nth-child(4) .carka {
+          margin: 0;
+          margin-bottom: 15px; } }
     .sluzby .sluzba:nth-child(4) h3 {
       order: 1; }
     .sluzby .sluzba:nth-child(4) p {
@@ -3067,6 +3105,10 @@ footer {
       @media screen and (max-width: 850px) {
         .sluzby .sluzba:nth-child(4) p {
           float: right; } }
+      @media screen and (max-width: 420px) {
+        .sluzby .sluzba:nth-child(4) p {
+          float: none;
+          text-align: left; } }
     @media screen and (max-width: 850px) {
       .sluzby .sluzba {
         display: -webkit-box;
