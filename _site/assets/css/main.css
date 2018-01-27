@@ -2598,11 +2598,11 @@ body {
   background: #fff;
   outline: none; }
 
-h1, h2, h3, h4, h5, p, span, a, div, header, footer {
+h1, h2, h3, h4, h5, p, span, a, div, header, footer, button {
   font-weight: normal !important;
   font-family: reg;
   outline: 0; }
-  h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, p:focus, span:focus, a:focus, div:focus, header:focus, footer:focus {
+  h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, p:focus, span:focus, a:focus, div:focus, header:focus, footer:focus, button:focus {
     outline: 0; }
 
 header {
@@ -2745,6 +2745,10 @@ footer {
       footer .texty {
         width: calc(100% - 120px);
         margin-bottom: 60px; } }
+    @media screen and (max-width: 590px) {
+      footer .texty {
+        width: calc(100% - 50px);
+        margin-bottom: 50px; } }
   footer .kontakty {
     width: calc(100% - 200px);
     margin: 0 auto;
@@ -2786,12 +2790,18 @@ footer {
       @media screen and (max-width: 850px) {
         footer .kontakty .kontakt {
           margin-right: 65px; } }
+      @media screen and (max-width: 590px) {
+        footer .kontakty .kontakt {
+          margin-bottom: 35px; } }
     @media screen and (max-width: 1260px) {
       footer .kontakty {
         width: calc(100% - 150px); } }
     @media screen and (max-width: 850px) {
       footer .kontakty {
         width: calc(100% - 120px); } }
+    @media screen and (max-width: 590px) {
+      footer .kontakty {
+        width: calc(100% - 50px); } }
   @media screen and (max-width: 1260px) {
     footer {
       width: calc((100% - 100px) - 100px); } }
@@ -2803,6 +2813,11 @@ footer {
       margin-top: 80px;
       padding-top: 50px;
       margin-bottom: 50px; } }
+  @media screen and (max-width: 590px) {
+    footer {
+      width: calc(100% - 50px);
+      padding-top: 30px;
+      margin-bottom: 25px; } }
 
 .jumbotron {
   position: relative; }
@@ -2869,6 +2884,9 @@ footer {
         .jumbotron .tablet h2 {
           font-size: 12px;
           line-height: 21px; } }
+      @media screen and (max-width: 590px) {
+        .jumbotron .tablet h2 {
+          width: calc(100% - 60px); } }
     @media screen and (max-width: 1260px) {
       .jumbotron .tablet {
         width: calc((100% - 100px) - 100px); } }
@@ -2877,6 +2895,10 @@ footer {
         padding: 45px 0;
         top: -95px;
         margin-bottom: -95px; } }
+    @media screen and (max-width: 590px) {
+      .jumbotron .tablet {
+        width: calc(100% - 100px);
+        padding: 30px 0; } }
 
 .sluzby {
   width: calc((100% - 100px) - 200px);
@@ -2935,6 +2957,9 @@ footer {
             line-height: 25px;
             margin: 0;
             margin-top: 25px; } }
+        @media screen and (max-width: 590px) {
+          .sluzby .sluzba .blok p {
+            max-width: none; } }
       @media screen and (max-width: 1260px) {
         .sluzby .sluzba .blok {
           width: calc(70% - 50px); } }
@@ -2968,6 +2993,13 @@ footer {
           margin-left: 0;
           margin-right: 0;
           margin-top: 40px; } }
+      @media screen and (max-width: 590px) {
+        .sluzby .sluzba .fotka {
+          width: 100%;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none;
+          height: 180px; } }
     .sluzby .sluzba:nth-child(1) {
       margin-top: 140px; }
       .sluzby .sluzba:nth-child(1) .fotka {
@@ -3059,3 +3091,6 @@ footer {
   @media screen and (max-width: 1260px) {
     .sluzby {
       width: calc((100% - 100px) - 100px); } }
+  @media screen and (max-width: 590px) {
+    .sluzby {
+      width: calc(100% - 50px); } }

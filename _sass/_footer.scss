@@ -42,6 +42,11 @@ footer {
       width: calc(100% - 120px);
       margin-bottom: 60px;
     }
+
+    @media screen and (max-width: 590px){
+      width: calc(100% - 50px);
+      margin-bottom: 50px;
+    }
   }
 
   .kontakty {
@@ -103,6 +108,10 @@ footer {
       @media screen and (max-width: 850px){
         margin-right: 65px;
       }
+
+      @media screen and (max-width: 590px){
+        margin-bottom: 35px;
+      }
     }
 
     @media screen and (max-width: 1260px){
@@ -111,6 +120,10 @@ footer {
 
     @media screen and (max-width: 850px){
       width: calc(100% - 120px);
+    }
+
+    @media screen and (max-width: 590px){
+      width: calc(100% - 50px);
     }
   }
 
@@ -126,5 +139,11 @@ footer {
     margin-top: 80px;
     padding-top: 50px;
     margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 590px){
+    width: calc(100% - 50px);
+    padding-top: 30px;
+    margin-bottom: 25px;
   }
 }
