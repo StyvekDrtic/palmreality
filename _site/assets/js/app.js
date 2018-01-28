@@ -1,3 +1,18 @@
+$(".menuButton").click(function() {
+  $(".mobilniMenu").css("opacity", "1");
+  $(".mobilniMenu").css("z-index", "1000");
+});
+
+$(".menuButtonPryc").click(function() {
+  $(".mobilniMenu").css("opacity", "0");
+  $(".mobilniMenu").css("z-index", "-1000");
+});
+
+$(".mobilniMenu ul li a").click(function() {
+  $(".mobilniMenu").css("opacity", "0");
+  $(".mobilniMenu").css("z-index", "-1000");
+});
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
