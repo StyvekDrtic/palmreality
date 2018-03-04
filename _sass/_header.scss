@@ -25,7 +25,7 @@
     right: 50px;
   }
 
-  @media screen and (max-width: 780px){
+  @media screen and (max-width: 940px){
     display: none;
   }
 }
@@ -60,7 +60,7 @@ header {
           color: #000000;
           letter-spacing: 1.85px;
 
-          @media screen and (max-width: 850px){
+          @media screen and (max-width: 950px){
             letter-spacing: 1.25px;
           }
         }
@@ -79,7 +79,7 @@ header {
       }
     }
 
-    @media screen and (max-width: 780px){
+    @media screen and (max-width: 940px){
       display: none;
     }
   }
@@ -92,7 +92,7 @@ header {
       left: calc((100% - 131px)/2);
       top: 28px;
 
-      @media screen and (max-width: 780px){
+      @media screen and (max-width: 940px){
         width: auto;
         height: 20px;
         top: 25px;
@@ -106,7 +106,7 @@ header {
     }
   }
 
-  @media screen and (max-width: 780px){
+  @media screen and (max-width: 940px){
     height: 70px;
     margin-top: 0;
   }
@@ -128,7 +128,7 @@ header {
   right: 50px;
   padding: 0;
 
-  @media screen and (max-width: 780px){
+  @media screen and (max-width: 940px){
     display: block;
   }
 
